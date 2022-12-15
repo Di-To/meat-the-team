@@ -38,9 +38,9 @@ export default function GameComponent() {
       <div className="game-map-container">
         {selectedGame === gameList[0] ? (
           <IceBreakerComponent theGame={selectedGame} />
-        ) : (
+        ) : selectedGame !== null ? (
           <ComingSoon />
-        )}
+        ) : null}
       </div>
     </div>
   );

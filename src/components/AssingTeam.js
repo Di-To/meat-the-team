@@ -39,7 +39,9 @@ export default function AssingTeam({ mod, invitees }) {
                 .filter((x) => x.firstName.includes(moderator))
                 .map((y) => (
                   <div className="teammate-div">
-                    <div className="close-button">{<AiOutlineClose />}</div>
+                    <button className="close-button">
+                      <AiOutlineClose />
+                    </button>
                     <img className="avatar-image-people" src={`${y.img}`}></img>
                     <p>{moderator}</p>
                   </div>
@@ -52,7 +54,9 @@ export default function AssingTeam({ mod, invitees }) {
           <div className="inner-team-space">
             {invitedCoworkers.map((person) => (
               <div key={person.id} className="teammate-div">
-                <div className="close-button">{<AiOutlineClose />}</div>
+                <button className="close-button">
+                  <AiOutlineClose />
+                </button>
                 <img
                   className="avatar-image-people"
                   src="https://robohash.org/person-10.png"

@@ -21,6 +21,11 @@ export default function PeopleComponent({ filteredTeam, members }) {
     setShow(!show);
   };
 
+  // const removeMemberFromInvites = (e) => {
+  //   const clicked = e.target.value;
+  //   teamArray.pop([...clickedArray, clicked][0]);
+  // };
+
   const addMemberToMod = (e) => {
     const clicked = e.target.value;
     console.log(clicked);
@@ -38,7 +43,7 @@ export default function PeopleComponent({ filteredTeam, members }) {
   return (
     <div>
       <div className="people-container">
-        people
+        <p>Team</p>
         {teamMembers
           .filter((person) => person.team.includes(filterVariable))
           .map((filteredPeople) => (
@@ -52,14 +57,14 @@ export default function PeopleComponent({ filteredTeam, members }) {
                   value={filteredPeople.firstName}
                   onClick={addMemberToMod}
                 >
-                  Mod
+                  <>Mod</>
                 </button>
                 <button
                   className="meeting-button"
                   value={filteredPeople.firstName}
                   onClick={addMemberToInvites}
                 >
-                  Invite
+                  <>Invite</>
                 </button>
               </div>
             </div>
@@ -74,7 +79,7 @@ export default function PeopleComponent({ filteredTeam, members }) {
                 setMode("assign");
               }}
             >
-              Assign
+              <>Assign</>
             </button>
             <button
               className="mode-button"
@@ -82,7 +87,7 @@ export default function PeopleComponent({ filteredTeam, members }) {
                 setMode("discover");
               }}
             >
-              Discover
+              <>Discover</>
             </button>
             <button
               className="mode-button"
@@ -90,12 +95,16 @@ export default function PeopleComponent({ filteredTeam, members }) {
                 setMode("play");
               }}
             >
-              Play
+              <>Play</>
             </button>
           </div>
 
           {mode === "assign" ? (
-            <AssingTeam mod={modArray} invitees={teamArray} />
+            <AssingTeam
+              mod={modArray}
+              invitees={teamArray}
+              // assingTeam={removeMemberFromInvites}
+            />
           ) : mode === "discover" ? (
             <DiscoverComponent team={members} filteredTeam={filteredTeam} />
           ) : mode === "play" ? (

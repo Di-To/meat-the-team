@@ -1,6 +1,8 @@
 .discover-component-container {
-  height: 300px;
+  height: 400px;
   width: 100%;
+  background-color: #2f3152;
+  border-radius: 16px;
   /* border: solid 2px cyan; */
 }
 

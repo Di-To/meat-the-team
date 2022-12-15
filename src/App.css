@@ -5,6 +5,11 @@ h3 {
   margin: 0;
 }
 
+a {
+  decoration: none;
+  color: white;
+}
+
 .App {
   text-align: center;
 }
@@ -15,7 +20,7 @@ h3 {
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
