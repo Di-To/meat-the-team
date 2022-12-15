@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { icebreakers, roulette, crazy, funFact } from "../mock-data";
 import "../styles/game-component.css";
+import ComingSoon from "./ComingSoon";
 import IceBreakerComponent from "./IceBreakerComponent";
 
 export default function GameComponent() {
@@ -37,7 +38,9 @@ export default function GameComponent() {
       <div className="game-map-container">
         {selectedGame === gameList[0] ? (
           <IceBreakerComponent theGame={selectedGame} />
-        ) : null}
+        ) : (
+          <ComingSoon />
+        )}
       </div>
     </div>
   );
