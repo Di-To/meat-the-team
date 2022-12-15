@@ -66,3 +66,12 @@
   width: 100px;
   margin: 20px;
 }
+
+.close-button {
+  display: flex;
+  height: 20px;
+  width: 100%;
+  /* border: solid white 2px; */
+  color: white;
+  justify-content: flex-end;
+}

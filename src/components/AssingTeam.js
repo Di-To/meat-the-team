@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "../styles/assign-team.css";
 import { teams, members, emailToTeam, emailToMod } from "../mock-data";
+import { AiOutlineClose } from "react-icons/ai";
 
-export default function AssingTeam({ mod, invitees, teams, memebers }) {
+export default function AssingTeam({ mod, invitees }) {
   const moderator = mod;
   const allWorkers = members;
   const invitedCoworkers = invitees;
@@ -37,10 +38,11 @@ export default function AssingTeam({ mod, invitees, teams, memebers }) {
               {members
                 .filter((x) => x.firstName.includes(moderator))
                 .map((y) => (
-                  <>
+                  <div className="teammate-div">
+                    <div className="close-button">{<AiOutlineClose />}</div>
                     <img className="avatar-image-people" src={`${y.img}`}></img>
                     <p>{moderator}</p>
-                  </>
+                  </div>
                 ))}
             </>
           ) : null}
@@ -50,6 +52,7 @@ export default function AssingTeam({ mod, invitees, teams, memebers }) {
           <div className="inner-team-space">
             {invitedCoworkers.map((person) => (
               <div key={person.id} className="teammate-div">
+                <div className="close-button">{<AiOutlineClose />}</div>
                 <img
                   className="avatar-image-people"
                   src="https://robohash.org/person-10.png"
