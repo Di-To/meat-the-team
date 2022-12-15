@@ -89,6 +89,36 @@ const members = [
       "Anim eu enim mollit pariatur proident eu occaecat in reprehenderit veniam sit mollit do nostrud.",
     hobbies: "Learning, learning and learning!",
   },
+  {
+    id: 9,
+    firstName: "Henry",
+    lastName: "Amesseder",
+    img: "https://robohash.org/person-9.png",
+    team: ["Team Operations"],
+    shortDescription:
+      "Anim eu enim mollit pariatur proident eu occaecat in reprehenderit veniam sit mollit do nostrud.",
+    hobbies: "Learning, learning and learning!",
+  },
+  {
+    id: 10,
+    firstName: "Kedson",
+    lastName: "Alves",
+    img: "https://robohash.org/person-10.png",
+    team: ["Team Growth"],
+    shortDescription:
+      "Anim eu enim mollit pariatur proident eu occaecat in reprehenderit veniam sit mollit do nostrud.",
+    hobbies: "Learning, learning and learning!",
+  },
+  {
+    id: 11,
+    firstName: "Filip",
+    lastName: "Gres",
+    img: "https://robohash.org/person-11.png",
+    team: ["Team Engagement"],
+    shortDescription:
+      "Anim eu enim mollit pariatur proident eu occaecat in reprehenderit veniam sit mollit do nostrud.",
+    hobbies: "Learning, learning and learning!",
+  },
 ];
 
 const emailToTeam = [
