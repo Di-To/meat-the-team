@@ -1,0 +1,47 @@
+.people-container {
+  display: flex;
+  /* border: solid 2px white; */
+}
+
+.person-container {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  width: 120px;
+  margin: 30px;
+  justify-content: space-between;
+  align-items: center;
+  /* border: solid 2px white; */
+}
+
+.avatar-image {
+  height: 90px;
+  width: 90px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.button-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.meeting-button {
+  height: 25px;
+  width: 50px;
+}
+
+.mode-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mode-button {
+  height: 30px;
+  width: 100px;
+  margin: 20px;
+}

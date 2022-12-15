@@ -1,0 +1,6 @@
+.flex-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  /* border: solid 2px white; */
+}
